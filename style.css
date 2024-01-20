@@ -414,6 +414,10 @@ footer {
     max-width: 500px;
     border: 1px solid red;
   }
+  main .offer-all .offer-ul {
+    grid: none;
+    display: flex;
+  }
   main .section2 .container .boxs .boxs-child {
     width: 100%;
     max-width: none;
@@ -435,5 +439,9 @@ footer {
   }
   .featured-ul .featured-li .p {
     width: 100%;
+  }
+  .jay-all .jay-link a {
+    display: none;
+    border: 1px solid red;
   }
 }/*# sourceMappingURL=style.css.map */
