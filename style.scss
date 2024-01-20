@@ -104,10 +104,13 @@ nav {
     // background-position: bottom -120px right 0px;
     color: $color-links;
 
-    .janjay-img img {
-        // width: 500px;
+    .janjay-img {
+        width: 100%;
+        max-width: 490px;
         background-image: url(./svg/Ellipse\ 1.svg);
         background-repeat: no-repeat;
+        background-position: bottom -50px left 0;
+        background-size: cover;
         border: 1px solid red;
     }
 

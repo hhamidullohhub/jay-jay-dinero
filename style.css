@@ -64,9 +64,13 @@ nav {
   flex-wrap: wrap;
   color: #fff;
 }
-.janjay-dinero .janjay-img img {
+.janjay-dinero .janjay-img {
+  width: 100%;
+  max-width: 490px;
   background-image: url(./svg/Ellipse\ 1.svg);
   background-repeat: no-repeat;
+  background-position: bottom -50px left 0;
+  background-size: cover;
   border: 1px solid red;
 }
 .janjay-dinero .janjay-text h2 {
