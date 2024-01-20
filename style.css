@@ -64,11 +64,10 @@ nav {
   flex-wrap: wrap;
   color: #fff;
 }
-.janjay-dinero .janjay-img {
-  width: 500px;
+.janjay-dinero .janjay-img img {
   background-image: url(./svg/Ellipse\ 1.svg);
   background-repeat: no-repeat;
-  border: 1px solid 0;
+  border: 1px solid red;
 }
 .janjay-dinero .janjay-text h2 {
   line-height: 100px;
