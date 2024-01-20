@@ -62,10 +62,13 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  color: #fff;
+}
+.janjay-dinero .janjay-img {
+  width: 500px;
   background-image: url(./svg/Ellipse\ 1.svg);
   background-repeat: no-repeat;
-  background-position: bottom -120px right 0px;
-  color: #fff;
+  border: 1px solid 0;
 }
 .janjay-dinero .janjay-text h2 {
   line-height: 100px;
