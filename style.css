@@ -494,7 +494,6 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border: 1px solid green;
   }
   .jay-all .jay-link:hover a {
     display: block;
