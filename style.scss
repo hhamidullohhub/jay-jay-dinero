@@ -99,31 +99,30 @@ nav {
     justify-content: $justify-between;
     align-items: center;
     flex-wrap: $flex-wrap;
-    // background-image: url(./svg/Ellipse\ 1.svg);
-    // background-repeat: no-repeat;
-    // background-position: bottom -120px right 0px;
     color: $color-links;
 
     .janjay-img {
         width: 100%;
-        max-width: 490px;
+        max-width: 550px;
         background-image: url(./svg/Ellipse\ 1.svg);
         background-repeat: no-repeat;
-        background-position: bottom -50px left 0;
+        display: flex;
+        justify-content: center;
+        background-position: top 70px left 0px;
         background-size: cover;
-        // border: 1px solid red;
+        img {
+            width: 100%;
+            max-width: 490px;
+        }
     }
 
     .janjay-text {
 
-        h2 {
-            line-height: 100px;
-        }
-
         .button-all {
             width: 100%;
-            max-width: 350px;
+            max-width: 300px;
             padding: 10px 0;
+            margin: auto;
             display: $display-flex;
             justify-content: $justify-between;
             button {
@@ -161,12 +160,13 @@ nav {
 
         h2 {
             font-size: 52px;
+            line-height: 100px;
         }
         
         p {
-            text-align: $text;
             width: 100%;
             max-width: 350px;
+            text-align: $text;
             font-size: $font-size-18;
             line-height: 30px;
         }
@@ -312,7 +312,6 @@ main {
             .offer-ul {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                border: 1px solid red;
             }
         }
 
@@ -364,10 +363,13 @@ main {
         }
 
         .li-button {
+            width: 100%;
+            max-width: 400px;
             padding-top: 10px;
             display: $display-flex;
             align-items: $align-center;
             justify-content: $justify-between;
+            flex-wrap: $flex-wrap;
             .button-view {
                 font-size: 16px;
                 background-color: $featured-orqa;
@@ -402,6 +404,7 @@ main {
 }
 
 .connect {
+    width: 100%;
     padding-top: 150px;
     display: $display-flex;
     justify-content: $justify-evenly;
@@ -428,22 +431,32 @@ main {
     
 }
 
+.connect-form {
+    width: 100%;
+    max-width: 500px;
+}
+
 .form-text {
-    width: 500px;
-    text-align: start;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
 
     h3 {
+        text-align: center;
         font-size: $font-size-24;
         color: $color-links;
         padding-bottom: 20px;
     }
     input {
-        width: 472px;
+        width: 100%;
+        max-width: 472px;
         height: 62px;
         background-color: $featured-orqa;
         border: none;
         border-radius: 10px;
+        padding: 0px 0px 0px 10px;
         margin: 10px 0;
+        color: $color-links;
     }
 
     .button-send {
@@ -468,10 +481,11 @@ main {
 }
 
 textarea {
-    width: 472px;
+    width: 100%;
     max-width: 472px;
     max-height: 98px;
     min-height: 98px;
+    padding: 10px 0px 0px 10px;
     background-color: $featured-orqa;
     border: none;
     border-radius: 10px;
@@ -486,6 +500,7 @@ footer {
 .footer-links {
     display: $display-flex;
     justify-content: $justify-between;
+    flex-wrap: $flex-wrap;
     a {
         color: gray;
         font-size: $font-size-18;
@@ -523,13 +538,25 @@ footer {
     .featured-li2 {
         grid-column: 2/3;
     }
+
+    .janjay-dinero {
+        justify-content: center;
+
+        .janjay-text {
+            p {
+                width: 100%;
+                max-width: none;
+            }
+        }
+    }
+
+    
 }
 
 @media screen and (max-width: 838px) {
     .connect-icon {
         width: 100%;
         max-width: 500px;
-        border: 1px solid red;
     }
 
     main {
@@ -537,11 +564,18 @@ footer {
             .offer-ul {
                 grid: none;
                 display: $display-flex;
+                flex-wrap: $flex-wrap;
             }
         }
     }
 
-    .janjay-dinero {}
+    .form-text {
+        text-align: center;
+        .button-send {
+            width: 100%;
+            max-width: 470px;
+        }
+    }
 
     main {
         .section2 {
@@ -569,7 +603,6 @@ footer {
 
              .featured-img {
                 width: 100%;
-                border: 1px solid red;
              }
 
             .p {
@@ -580,10 +613,37 @@ footer {
 
     .jay-all {
         .jay-link {
+            width: 50px;
+            height: 50px;
+            background-color: $button-color;
+            border-radius: 8px;
             a {
                 display: none;
-                border: 1px solid red;
+            }
+        }
+
+        .jay-link:hover {
+            width: 100%;
+            max-width: 170px;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border: 1px solid green;
+            a {
+                // display: flex;
+                display: block;
             }
         }
     }
+}
+
+@media screen and (max-width: 400px) {
+    .featured-ul {
+        .featured-li {
+            .li-button {
+                gap: 20px;
+            }
+        }
+    }    
 }

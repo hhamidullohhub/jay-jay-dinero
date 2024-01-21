@@ -66,19 +66,23 @@ nav {
 }
 .janjay-dinero .janjay-img {
   width: 100%;
-  max-width: 490px;
+  max-width: 550px;
   background-image: url(./svg/Ellipse\ 1.svg);
   background-repeat: no-repeat;
-  background-position: bottom -50px left 0;
+  display: flex;
+  justify-content: center;
+  background-position: top 70px left 0px;
   background-size: cover;
 }
-.janjay-dinero .janjay-text h2 {
-  line-height: 100px;
+.janjay-dinero .janjay-img img {
+  width: 100%;
+  max-width: 490px;
 }
 .janjay-dinero .janjay-text .button-all {
   width: 100%;
-  max-width: 350px;
+  max-width: 300px;
   padding: 10px 0;
+  margin: auto;
   display: flex;
   justify-content: space-between;
 }
@@ -110,11 +114,12 @@ nav {
 }
 .janjay-dinero .janjay-text h2 {
   font-size: 52px;
+  line-height: 100px;
 }
 .janjay-dinero .janjay-text p {
-  text-align: center;
   width: 100%;
   max-width: 350px;
+  text-align: center;
   font-size: 18px;
   line-height: 30px;
 }
@@ -229,7 +234,6 @@ main .offer-all .offer-ul .offer-li:hover {
   main .offer-all .offer-ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border: 1px solid red;
   }
 }
 main .offer-all .offer-li:hover {
@@ -272,10 +276,13 @@ main .featured-texts p {
   line-height: 30px;
 }
 .featured-ul .featured-li .li-button {
+  width: 100%;
+  max-width: 400px;
   padding-top: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .featured-ul .featured-li .li-button .button-view {
   font-size: 16px;
@@ -304,6 +311,7 @@ main .featured-texts p {
 }
 
 .connect {
+  width: 100%;
   padding-top: 150px;
   display: flex;
   justify-content: space-evenly;
@@ -326,22 +334,32 @@ main .featured-texts p {
   cursor: pointer;
 }
 
+.connect-form {
+  width: 100%;
+  max-width: 500px;
+}
+
 .form-text {
-  width: 500px;
-  text-align: start;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
 }
 .form-text h3 {
+  text-align: center;
   font-size: 24px;
   color: #fff;
   padding-bottom: 20px;
 }
 .form-text input {
-  width: 472px;
+  width: 100%;
+  max-width: 472px;
   height: 62px;
   background-color: #31313F;
   border: none;
   border-radius: 10px;
+  padding: 0px 0px 0px 10px;
   margin: 10px 0;
+  color: #fff;
 }
 .form-text .button-send {
   width: 174px;
@@ -361,10 +379,11 @@ main .featured-texts p {
 }
 
 textarea {
-  width: 472px;
+  width: 100%;
   max-width: 472px;
   max-height: 98px;
   min-height: 98px;
+  padding: 10px 0px 0px 10px;
   background-color: #31313F;
   border: none;
   border-radius: 10px;
@@ -379,6 +398,7 @@ footer {
 .footer-links {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer-links a {
   color: gray;
@@ -412,16 +432,30 @@ footer {
   .featured-li2 {
     grid-column: 2/3;
   }
+  .janjay-dinero {
+    justify-content: center;
+  }
+  .janjay-dinero .janjay-text p {
+    width: 100%;
+    max-width: none;
+  }
 }
 @media screen and (max-width: 838px) {
   .connect-icon {
     width: 100%;
     max-width: 500px;
-    border: 1px solid red;
   }
   main .offer-all .offer-ul {
     grid: none;
     display: flex;
+    flex-wrap: wrap;
+  }
+  .form-text {
+    text-align: center;
+  }
+  .form-text .button-send {
+    width: 100%;
+    max-width: 470px;
   }
   main .section2 .container .boxs .boxs-child {
     width: 100%;
@@ -440,13 +474,34 @@ footer {
   }
   .featured-ul .featured-li .featured-img {
     width: 100%;
-    border: 1px solid red;
   }
   .featured-ul .featured-li .p {
     width: 100%;
   }
+  .jay-all .jay-link {
+    width: 50px;
+    height: 50px;
+    background-color: #7562E0;
+    border-radius: 8px;
+  }
   .jay-all .jay-link a {
     display: none;
-    border: 1px solid red;
+  }
+  .jay-all .jay-link:hover {
+    width: 100%;
+    max-width: 170px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid green;
+  }
+  .jay-all .jay-link:hover a {
+    display: block;
+  }
+}
+@media screen and (max-width: 400px) {
+  .featured-ul .featured-li .li-button {
+    gap: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
