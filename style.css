@@ -430,10 +430,17 @@ footer {
 }
 @media screen and (max-width: 1140px) {
   .featured-ul {
-    display: grid;
+    display: flex;
     grid-template-columns: 350px 350px;
     justify-content: space-between;
     gap: 30px;
+  }
+  .featured-ul .featured-li {
+    width: 100%;
+    max-width: none;
+  }
+  .featured-ul .featured-img {
+    width: 100%;
   }
   .featured-li1 {
     grid-column: 1/2;
@@ -489,6 +496,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .featured-ul {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
   .featured-ul .featured-li {
@@ -499,6 +507,7 @@ footer {
   }
   .featured-ul .featured-li .featured-img {
     width: 100%;
+    max-width: none;
   }
   .featured-ul .featured-li .p {
     width: 100%;
