@@ -475,7 +475,26 @@ footer {
   main .section2 .container .boxs .boxs-child {
     width: 100%;
     max-width: 450px;
-    border: 1px solid red;
+  }
+}
+@media screen and (max-width: 970px) {
+  main .section2 .container .boxs {
+    grid: none;
+    display: flex;
+  }
+  main .section2 .container .boxs .boxs-child {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 870px) {
+  main .section2 .container .boxs {
+    grid: none;
+    display: flex;
+  }
+  main .section2 .container .boxs .boxs-child {
+    width: 100%;
+    max-width: 350px;
   }
 }
 @media screen and (max-width: 838px) {
@@ -535,7 +554,7 @@ footer {
     display: block;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 770px) {
   main .section2 .container .boxs {
     grid: none;
     display: flex;

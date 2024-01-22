@@ -604,7 +604,6 @@ footer {
                     .boxs-child {
                         width: 100%;
                         max-width: 450px;
-                        border: 1px solid red;
                     }
                 }
             }
@@ -612,7 +611,39 @@ footer {
     }
 }
 
+@media screen and (max-width: 970px) {
+    main {
+        .section2 {
+            .container {
+                .boxs {
+                    grid: none;
+                    display: flex;
+                    .boxs-child {
+                        width: 100%;
+                        max-width: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
 
+@media screen and (max-width: 870px) {
+    main {
+        .section2 {
+            .container {
+                .boxs {
+                    grid: none;
+                    display: flex;
+                    .boxs-child {
+                        width: 100%;
+                        max-width: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 838px) {
     .connect-icon {
@@ -640,27 +671,27 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .featured-ul {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-
-        .featured-li {
-            width: 100%;
-            max-width: none;
-            display: flex;
-            flex-wrap: wrap;
-
-             .featured-img {
-                width: 100%;
-                max-width: none;
-
-             }
-
-            .p {
-                width: 100%;
+            .featured-ul {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+        
+                .featured-li {
+                    width: 100%;
+                    max-width: none;
+                    display: flex;
+                    flex-wrap: wrap;
+        
+                     .featured-img {
+                        width: 100%;
+                        max-width: none;
+        
+                     }
+        
+                    .p {
+                        width: 100%;
+                    }
+                }
             }
-        }
-    }
 
     .jay-all {
         .jay-link {
@@ -687,7 +718,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 770px) {
     main {
         .section2 {
             .container {
