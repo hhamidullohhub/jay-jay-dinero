@@ -223,7 +223,7 @@ main {
                 margin-top: 60px;
                 display: $display-flex;
                 justify-content: $justify-between;
-                flex-wrap: $flex-wrap;
+                // flex-wrap: $flex-wrap; 
                 gap: 30px;
 
                 .boxs-child {
@@ -533,6 +533,7 @@ footer {
                     .boxs-child {
                         width: 100%;
                         max-width: 610px;
+                        border: 1px solid red;
                     }
                 }
             }

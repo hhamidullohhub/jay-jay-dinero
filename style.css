@@ -161,7 +161,6 @@ main .section2 .container .boxs {
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 30px;
 }
 main .section2 .container .boxs .boxs-child {
@@ -427,6 +426,7 @@ footer {
   main .section2 .container .boxs .boxs-child {
     width: 100%;
     max-width: 610px;
+    border: 1px solid red;
   }
 }
 @media screen and (max-width: 1140px) {
