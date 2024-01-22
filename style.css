@@ -478,16 +478,6 @@ footer {
     border: 1px solid red;
   }
 }
-@media screen and (max-width: 600px) {
-  main .section2 .container .boxs {
-    grid: none;
-    display: flex;
-  }
-  main .section2 .container .boxs .boxs-child {
-    width: 100%;
-    max-width: none;
-  }
-}
 @media screen and (max-width: 838px) {
   .connect-icon {
     width: 100%;
@@ -543,6 +533,16 @@ footer {
   }
   .jay-all .jay-link:hover a {
     display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .section2 .container .boxs {
+    grid: none;
+    display: flex;
+  }
+  main .section2 .container .boxs .boxs-child {
+    width: 100%;
+    max-width: none;
   }
 }
 @media screen and (max-width: 400px) {

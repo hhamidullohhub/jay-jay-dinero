@@ -612,22 +612,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 600px) {
-    main {
-        .section2 {
-            .container {
-                .boxs {
-                    grid: none;
-                    display: flex;
-                    .boxs-child {
-                        width: 100%;
-                        max-width: none;
-                    }
-                }
-            }
-        }
-    }
-}
+
 
 @media screen and (max-width: 838px) {
     .connect-icon {
@@ -697,6 +682,23 @@ footer {
             flex-wrap: wrap;
             a {
                 display: block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        .section2 {
+            .container {
+                .boxs {
+                    grid: none;
+                    display: flex;
+                    .boxs-child {
+                        width: 100%;
+                        max-width: none;
+                    }
+                }
             }
         }
     }
