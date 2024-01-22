@@ -466,7 +466,19 @@ footer {
     max-width: 500px;
   }
 }
-@media screen and (max-width: 1072px) {
+@media screen and (max-width: 1070px) {
+  main .section2 .container .boxs {
+    display: flex;
+    flex-wrap: none;
+    justify-content: space-evenly;
+  }
+  main .section2 .container .boxs .boxs-child {
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid red;
+  }
+}
+@media screen and (max-width: 600px) {
   main .section2 .container .boxs {
     grid: none;
     display: flex;
