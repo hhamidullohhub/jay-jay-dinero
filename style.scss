@@ -52,7 +52,6 @@ header {
     max-width: $width-container;
     margin: $container-margin;
     padding: 0px 20px;
-    border: solid red;
 }
 
 .jay-all {
@@ -534,7 +533,6 @@ footer {
                     .boxs-child {
                         width: 100%;
                         max-width: 610px;
-                        border: 1px solid red;
                     }
                 }
             }
@@ -764,7 +762,6 @@ footer {
             .container {
                 .boxs {
                     .boxs-child {
-                        // width: 100%;
                         max-width: none;
                     }
                 }

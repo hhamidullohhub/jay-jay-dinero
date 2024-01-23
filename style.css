@@ -26,7 +26,6 @@ header {
   max-width: 1320px;
   margin: 0 auto;
   padding: 0px 20px;
-  border: solid red;
 }
 
 .jay-all {
@@ -427,7 +426,6 @@ footer {
   main .section2 .container .boxs .boxs-child {
     width: 100%;
     max-width: 610px;
-    border: 1px solid red;
   }
 }
 @media screen and (max-width: 1140px) {
