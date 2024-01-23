@@ -26,6 +26,7 @@ header {
   max-width: 1320px;
   margin: 0 auto;
   padding: 0px 20px;
+  border: solid red;
 }
 
 .jay-all {
@@ -470,6 +471,12 @@ footer {
     flex-wrap: none;
     justify-content: space-evenly;
   }
+  main .section2 .container .boxs .boxs-child {
+    height: 200px;
+  }
+  main .section2 .container .boxs .boxs-child h2 {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 970px) {
   main .section2 .container .boxs {
@@ -543,9 +550,22 @@ footer {
   main .section2 .container .boxs {
     grid: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   main .section2 .container .boxs .boxs-child {
     width: 100%;
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 705px) {
+  main .section2 .container .boxs .boxs-child {
+    width: 100%;
+    max-width: 310px;
+  }
+}
+@media screen and (max-width: 695px) {
+  main .section2 .container .boxs .boxs-child {
     max-width: none;
   }
 }

@@ -52,6 +52,7 @@ header {
     max-width: $width-container;
     margin: $container-margin;
     padding: 0px 20px;
+    border: solid red;
 }
 
 .jay-all {
@@ -605,8 +606,10 @@ footer {
                     flex-wrap: none;
                     justify-content: space-evenly;
                     .boxs-child {
-                        // width: 100%;
-                        // max-width: none;
+                        height: 200px;
+                        h2 {
+                            font-size: 15px;
+                        }
                     }
                 }
             }
@@ -728,8 +731,40 @@ footer {
                 .boxs {
                     grid: none;
                     display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
                     .boxs-child {
                         width: 100%;
+                        max-width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 705px) {
+    main {
+        .section2 {
+            .container {
+                .boxs {
+                    .boxs-child {
+                        width: 100%;
+                        max-width: 310px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 695px) {
+    main {
+        .section2 {
+            .container {
+                .boxs {
+                    .boxs-child {
+                        // width: 100%;
                         max-width: none;
                     }
                 }
